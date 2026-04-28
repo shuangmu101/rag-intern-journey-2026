@@ -56,6 +56,7 @@ results = collection.query(
 print("\n" + "="*60)
 print("检索结果（Top 2）")
 print("="*60)
+# 0 是因为只查询了一个问题 它是一个双层结构
 for i, (doc_id, distance, doc) in enumerate(
     zip(results['ids'][0], results['distances'][0], results['documents'][0])
 ):
